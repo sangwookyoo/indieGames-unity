@@ -10,16 +10,14 @@ public class PlayerAction : MonoBehaviour
     public float speed;
     bool isHorizonMove;
 
-    Rigidbody2D rigid;
 
     private void Awake()
     {
-        rigid = GetComponent<Rigidbody2D>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,7 +29,6 @@ public class PlayerAction : MonoBehaviour
 
         //Check Button Bown & Up
         bool hDown = Input.GetButtonDown("Horizontal");
-        Debug.Log(Input.GetAxisRaw("Horizontal"));
         bool vDown = Input.GetButtonDown("Vertical");
         bool hUp = Input.GetButtonUp("Horizontal");
         bool vUp = Input.GetButtonUp("Vertical");
@@ -39,12 +36,12 @@ public class PlayerAction : MonoBehaviour
         //Check Horizontal Move
         if (hDown || vUp)
             isHorizonMove = true;
-        else if (vDown || hUp)
+        else if (vDown ||hUp)
             isHorizonMove = false;
 
-        //Movw
-        Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        rigid.velocity = moveVec * speed * Time.deltaTime;
+        ////Movw
+        Vector2 moveVec= isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
+        transform.Translate(moveVec *speed* Time.deltaTime);
       
 
     }
