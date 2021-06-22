@@ -25,27 +25,27 @@ public class PlayerAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        h = Input.GetAxis("Horizontal");
-        v = Input.GetAxis("Vertical");
+        //movw Value
+        h = Input.GetAxisRaw("Horizontal");
+        v = Input.GetAxisRaw("Vertical");
 
+        //Check Button Bown & Up
         bool hDown = Input.GetButtonDown("Horizontal");
+        Debug.Log(Input.GetAxisRaw("Horizontal"));
         bool vDown = Input.GetButtonDown("Vertical");
         bool hUp = Input.GetButtonUp("Horizontal");
         bool vUp = Input.GetButtonUp("Vertical");
 
-        if (hDown)
+        //Check Horizontal Move
+        if (hDown || vUp)
             isHorizonMove = true;
-        else if (vDown)
+        else if (vDown || hUp)
             isHorizonMove = false;
 
-        int a = 0;
-        bool b;
-        b = (a > 10) ? true : false;
-    }
-
-    private void FixedUpdate()
-    {
+        //Movw
         Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        rigid.velocity = moveVec * speed;
+        rigid.velocity = moveVec * speed * Time.deltaTime;
+      
+
     }
 }
