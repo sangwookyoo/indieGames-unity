@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PlayerAction : MonoBehaviour
 {
     float h;
     float v;
     public float speed;
+    bool isHorizonMove;
 
     Rigidbody2D rigid;
 
@@ -25,10 +27,25 @@ public class PlayerAction : MonoBehaviour
     {
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
+
+        bool hDown = Input.GetButtonDown("Horizontal");
+        bool vDown = Input.GetButtonDown("Vertical");
+        bool hUp = Input.GetButtonUp("Horizontal");
+        bool vUp = Input.GetButtonUp("Vertical");
+
+        if (hDown)
+            isHorizonMove = true;
+        else if (vDown)
+            isHorizonMove = false;
+
+        int a = 0;
+        bool b;
+        b = (a > 10) ? true : false;
     }
 
     private void FixedUpdate()
     {
-        rigid.velocity = new Vector2(h * speed, v * speed);
+        Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
+        rigid.velocity = moveVec * speed;
     }
 }
