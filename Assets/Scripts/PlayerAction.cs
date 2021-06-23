@@ -8,6 +8,7 @@ public class PlayerAction : MonoBehaviour
     float h;
     float v;
     public float speed;
+    public GameManager manager;
     bool isHorizonMove;
     Vector3 dirVec;
     GameObject scanObject;
@@ -28,15 +29,14 @@ public class PlayerAction : MonoBehaviour
     void Update()
     {
         //movw Value
-        h = Input.GetAxisRaw("Horizontal");
-        v = Input.GetAxisRaw("Vertical");
+        h = manager.isAction ? 0 : Input.GetAxisRaw("Horizontal");
+        v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
 
         //Check Button Bown & Up
-        bool hDown = Input.GetButtonDown("Horizontal");
-        bool vDown = Input.GetButtonDown("Vertical");
-
-        bool hUp = Input.GetButtonUp("Horizontal");
-        bool vUp = Input.GetButtonUp("Vertical");
+        bool hDown = manager.isAction ? false : Input.GetButtonDown("Horizontal");
+        bool vDown = manager.isAction ? false : Input.GetButtonDown("Vertical");
+        bool hUp = manager.isAction ? false : Input.GetButtonUp("Horizontal");
+        bool vUp = manager.isAction ? false : Input.GetButtonUp("Vertical");
 
         //Check Horizontal Move
         if (hDown)
@@ -56,9 +56,15 @@ public class PlayerAction : MonoBehaviour
         else if (hDown && h == 1)
             dirVec = Vector3.right;
 
-        ////Move
-        //Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        //transform.Translate(moveVec * speed * Time.deltaTime);
+        //Scan Object
+        if (Input.GetButtonDown("Jump") && scanObject != null)
+            manager.Action(scanObject);
+    }
+    private void FixedUpdate()
+    {
+        //Move
+        Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
+        rigid.velocity = moveVec * speed;
 
         //Ray
         Debug.DrawRay(transform.position, dirVec * 0.7f, new Color(0, 1, 0));
@@ -70,16 +76,5 @@ public class PlayerAction : MonoBehaviour
         }
         else
             scanObject = null;
-
-        //Scan Object
-        if (Input.GetButtonDown("Jump") && scanObject != null)
-            Debug.Log("scan : " + scanObject);
-    }
-
-    private void FixedUpdate()
-    {
-        //Move
-        Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        rigid.velocity = moveVec * speed;
     }
 }
