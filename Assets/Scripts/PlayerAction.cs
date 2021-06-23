@@ -28,21 +28,32 @@ public class PlayerAction : MonoBehaviour
         v = Input.GetAxisRaw("Vertical");
 
         //Check Button Bown & Up
-        bool hDown = Input.GetButtonDown("Horizontal");
-        bool vDown = Input.GetButtonDown("Vertical");
+        bool hDown = Input.GetButton("Horizontal");
+        bool vDown = Input.GetButton("Vertical");
         bool hUp = Input.GetButtonUp("Horizontal");
         bool vUp = Input.GetButtonUp("Vertical");
 
         //Check Horizontal Move
         if (hDown || vUp)
             isHorizonMove = true;
-        else if (vDown ||hUp)
+        else if (vDown || hUp)
             isHorizonMove = false;
 
-        ////Movw
-        Vector2 moveVec= isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        transform.Translate(moveVec *speed* Time.deltaTime);
-      
+        //Movw
+        //Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
+        //transform.Translate(moveVec * speed * Time.deltaTime);
+        Vector2 moveVec;
+        moveVec.x = h;
+        moveVec.y = v;
+        if (h != 0)
+        {
+            isHorizonMove = true;
+        }
+        else if (v != 0)
+        {
+            
+        }
+
 
     }
 }
