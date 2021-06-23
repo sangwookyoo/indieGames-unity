@@ -24,12 +24,13 @@ public class PlayerAction : MonoBehaviour
     void Update()
     {
         //movw Value
-        h = Input.GetAxisRaw("Horizontal");
+        h =  Input.GetAxisRaw("Horizontal");
         v = Input.GetAxisRaw("Vertical");
 
         //Check Button Bown & Up
         bool hDown = Input.GetButton("Horizontal");
         bool vDown = Input.GetButton("Vertical");
+
         bool hUp = Input.GetButtonUp("Horizontal");
         bool vUp = Input.GetButtonUp("Vertical");
 
@@ -39,21 +40,9 @@ public class PlayerAction : MonoBehaviour
         else if (vDown || hUp)
             isHorizonMove = false;
 
-        //Movw
-        //Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        //transform.Translate(moveVec * speed * Time.deltaTime);
-        Vector2 moveVec;
-        moveVec.x = h;
-        moveVec.y = v;
-        if (h != 0)
-        {
-            isHorizonMove = true;
-        }
-        else if (v != 0)
-        {
-            
-        }
-
-
+       
+        //Move
+        Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
+        transform.Translate(moveVec * speed * Time.deltaTime);
     }
 }
