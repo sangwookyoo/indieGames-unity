@@ -12,6 +12,7 @@ public class OnOff : MonoBehaviour
     public Slider audioSlider;
 
     bool onoff_; //창 onoff 확인
+    public GameObject Offimg_;
 
     public void BGM_AudioControl() //0~100
     {
@@ -29,9 +30,36 @@ public class OnOff : MonoBehaviour
         else masterMixer.SetFloat("EFFECT", sound);
     }
 
-    public void AudioVolume() //on off
+    public void BGM_AudioVolume_0_1(GameObject bar_) //on off
     {
+        onoff_ = !onoff_;
         AudioListener.volume = AudioListener.volume == 0 ? 1 : 0; //듣는이의 전체볼륨
+        Offimg_.SetActive(onoff_);
+        if (this.GetComponent<Toggle>().isOn == enabled)
+        {
+            bar_.GetComponent<Slider>().value = 0;
+        }
+        else
+        {
+            bar_.GetComponent<Slider>().value = -40;
+        }
+
+    }
+
+    public void Effect_AudioVolume_0_1(GameObject bar_) //on off
+    {
+        onoff_ = !onoff_;
+        AudioListener.volume = AudioListener.volume == 0 ? 1 : 0; //듣는이의 전체볼륨
+        Offimg_.SetActive(onoff_);
+        if (this.GetComponent<Toggle>().isOn == enabled)
+        {
+            bar_.GetComponent<Slider>().value = 0;
+        }
+        else
+        {
+            bar_.GetComponent<Slider>().value = -40;
+        }
+        
     }
 
     public void WindowOpen(GameObject Window_) //설정onoff
