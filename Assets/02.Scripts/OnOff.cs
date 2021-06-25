@@ -33,7 +33,7 @@ public class OnOff : MonoBehaviour
     public void BGM_AudioVolume_0_1(GameObject bar_) //on off
     {
         onoff_ = !onoff_;
-        AudioListener.volume = AudioListener.volume == 0 ? 1 : 0; //듣는이의 전체볼륨
+        //AudioListener.volume = AudioListener.volume == 0 ? 1 : 0; //듣는이의 전체볼륨
         Offimg_.SetActive(onoff_);
         if (this.GetComponent<Toggle>().isOn == enabled)
         {
@@ -49,7 +49,7 @@ public class OnOff : MonoBehaviour
     public void Effect_AudioVolume_0_1(GameObject bar_) //on off
     {
         onoff_ = !onoff_;
-        AudioListener.volume = AudioListener.volume == 0 ? 1 : 0; //듣는이의 전체볼륨
+        //AudioListener.volume = AudioListener.volume == 0 ? 1 : 0; //듣는이의 전체볼륨
         Offimg_.SetActive(onoff_);
         if (this.GetComponent<Toggle>().isOn == enabled)
         {
