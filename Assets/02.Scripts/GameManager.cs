@@ -5,25 +5,45 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public TalkManager talkManager;
     public GameObject talkPanel;
     public Text talkText;
     public GameObject scanObject;
     public bool isAction;
-
+    public int talkIndex;
     // Start is called before the first frame update
    
     public void Action(GameObject scanObj)
     {
-        if (isAction)
+        isAction = true;
+        scanObject = scanObj;
+        ObjData objData = scanObject.GetComponent<ObjData>();
+        Talk(objData.id, objData.isNpc);
+        
+        talkPanel.SetActive(isAction);
+    }
+
+    void Talk(int id, bool isNpc)
+    {
+        string talkData = talkManager.GetTalk(id, talkIndex);
+
+        if(talkData == null)
         {
             isAction = false;
+            talkIndex = 0;
+            return;
+        }
+
+        if(isNpc)
+        {
+            talkText.text = talkData;
         }
         else
         {
-            isAction = true;
-            scanObject = scanObj;
-            talkText.text = "이것의 이름은 " + scanObject.name + "이라고 한다.";
+            talkText.text = talkData;
         }
-        talkPanel.SetActive(isAction);
+
+        isAction = true;
+        talkIndex++;
     }
 }
