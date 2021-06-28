@@ -17,6 +17,7 @@ public class PlayerAction : MonoBehaviour
 
     private void Awake()
     {
+        manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         rigid = GetComponent<Rigidbody2D>();
     }
     // Start is called before the first frame update
