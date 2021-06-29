@@ -30,6 +30,8 @@ public class PlayerAction : MonoBehaviour
     void Update()
     {
         //movw Value
+        if(manager == null)
+            manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         h = manager.isAction ? 0 : Input.GetAxisRaw("Horizontal");
         v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
 

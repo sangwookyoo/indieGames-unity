@@ -6,13 +6,30 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public TalkManager talkManager;
-    public GameObject talkPanel;
     public Text talkText;
-    public GameObject scanObject;
     public bool isAction;
     public int talkIndex;
+    public GameObject MenuSet;
+    public GameObject scanObject;
+    public GameObject talkPanel;
+    public GameObject Player;
     // Start is called before the first frame update
-   
+
+
+    private void Start()
+    {
+        GameLoad();
+    }
+    private void Update()
+    {
+        if(Input.GetButtonDown("Cancel"))
+        {
+            if (MenuSet.activeSelf)
+                MenuSet.SetActive(false);
+            else
+            MenuSet.SetActive(true);
+        }
+    }
     public void Action(GameObject scanObj)
     {
         isAction = true;
@@ -45,5 +62,25 @@ public class GameManager : MonoBehaviour
 
         isAction = true;
         talkIndex++;
+    }
+    public void GameExit()
+    {
+        Application.Quit();
+    }
+
+    public void GameSave()
+    {
+        PlayerPrefs.SetFloat("PlayerX" ,Player.transform.position.x);
+        PlayerPrefs.SetFloat("PlayerY" ,Player.transform.position.y);
+        PlayerPrefs.Save();
+
+        MenuSet.SetActive(false);
+    }
+    public void GameLoad()
+    {
+        float x = PlayerPrefs.GetFloat("PlayerX");
+        float y = PlayerPrefs.GetFloat("PlayerY");
+
+        Player.transform.position = new Vector3(x, y, 0);
     }
 }
