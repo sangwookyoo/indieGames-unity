@@ -90,7 +90,16 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 14
-      m_TileSpriteIndex: 4294967295
+      m_TileSpriteIndex: 28
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 29
+      m_TileSpriteIndex: 29
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -333,7 +342,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: e51661f6686a80045903e7e244706922, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 0}
+    m_Data: {fileID: 11400000, guid: cdedcafbb0ef55744b177ac431293392, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 9b61d6bda82a06c428a80a20b8073834, type: 2}
   - m_RefCount: 1
@@ -362,6 +371,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: a76054731c3d90b4384368079c658edb, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f677f2071812d1b41adb414dc5bb0282, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 91d8ec1a4305be749bbaf489ca6422dd, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 16f4a17b961255a4f8071a57aa6620f0, type: 3}
@@ -419,8 +430,12 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 443bc50d03d6ae0499bb546d9bb6caea, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 2b649ee3cee6c2041afa7696ca49a86e, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: f52caf6b4906e8440970a0ad8f028594, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: f2f8c46a6d08ae04d8ed93c349e9806e, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 29
+  - m_RefCount: 30
     m_Data:
       e00: 1
       e01: 0
@@ -439,7 +454,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 29
+  - m_RefCount: 30
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0.0000000011729036, g: 0.0000000011729036, b: 0.0000000011729036,
