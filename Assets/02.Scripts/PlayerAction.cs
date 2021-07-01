@@ -15,18 +15,31 @@ public class PlayerAction : MonoBehaviour
 
     Rigidbody2D rigid;
 
-    private void Awake()
+    static public PlayerAction instance;
+    public string currentMapname;
+
+    /*private void Awake()
     {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         rigid = GetComponent<Rigidbody2D>();
-    }
-    // Start is called before the first frame update
+    }*/
+
     void Start()
     {
+        if (instance == null)
+        {
+            manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            rigid = GetComponent<Rigidbody2D>();
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+        }
+        else if (instance != null)
+        {
+            Destroy(this.gameObject);
+        }
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         //movw Value
