@@ -6,11 +6,23 @@ using UnityEngine.SceneManagement;
 public class LoadManager : MonoBehaviour
 {
     public string sceneName;
-    public bool isLoadFile1 = false;
-    public bool isLoadFile2 = false;
-    public bool isLoadFile3 = false;
-    public GameObject Player;
+    public GameObject onContinue;
+    public GameObject offContinue;
 
+    private void Start()
+    {
+        //PlayerPrefs.DeleteAll();
+        if (PlayerPrefs.HasKey("FirstPlayerX") || PlayerPrefs.HasKey("SecondPlayerX") || PlayerPrefs.HasKey("ThirdPlayerX"))
+        {
+            onContinue.SetActive(true);
+            offContinue.SetActive(false);
+        }
+        else
+        {
+            onContinue.SetActive(false);
+            offContinue.SetActive(true);
+        }
+    }
     public void OnButtonClick()
     {
         PlayerPrefs.SetInt("isLoadFile", 0);
