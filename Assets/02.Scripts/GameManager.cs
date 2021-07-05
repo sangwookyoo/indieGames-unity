@@ -17,9 +17,12 @@ public class GameManager : MonoBehaviour
     public GameObject talkPanel;
     public GameObject Player;
     // Start is called before the first frame update
-    
 
 
+    private void Awake()
+    {
+        Player = Resources.Load("Player") as GameObject;
+    }
     private void Start()
     {
         Debug.Log(PlayerPrefs.GetInt("isLoadFile"));
@@ -75,7 +78,7 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    #region �����ϱ�
+    #region save
     public void GameSave1()
     {
         PlayerPrefs.SetFloat("FirstPlayerX" ,Player.transform.position.x);
@@ -98,7 +101,7 @@ public class GameManager : MonoBehaviour
         MenuSet.SetActive(false);
     }
     #endregion
-    #region �ҷ�����
+    #region load
     public void GameLoad()
     {
         if (PlayerPrefs.HasKey("FirstPlayerX") || PlayerPrefs.HasKey("SecondPlayerX") || PlayerPrefs.HasKey("ThirdPlayerX"))
