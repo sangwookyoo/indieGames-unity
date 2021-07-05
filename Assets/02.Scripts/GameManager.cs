@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    #region ÀúÀåÇÏ±â
+    #region ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
     public void GameSave1()
     {
         PlayerPrefs.SetFloat("FirstPlayerX" ,Player.transform.position.x);
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
         MenuSet.SetActive(false);
     }
     #endregion
-    #region ºÒ·¯¿À±â
+    #region ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
     public void GameLoad()
     {
         if (PlayerPrefs.HasKey("FirstPlayerX") || PlayerPrefs.HasKey("SecondPlayerX") || PlayerPrefs.HasKey("ThirdPlayerX"))
