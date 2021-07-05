@@ -5460,6 +5460,9 @@ MonoBehaviour:
   talkManager: {fileID: 684111166}
   talkText: {fileID: 107638529}
   isAction: 0
+  isLoadFile1: 0
+  isLoadFile2: 0
+  isLoadFile3: 0
   talkIndex: 0
   MenuSet: {fileID: 0}
   scanObject: {fileID: 0}
