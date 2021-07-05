@@ -50,3 +50,6 @@ TagManager:
   - name: object
     uniqueID: 89895271
     locked: 0
+  - name: ImportantObject
+    uniqueID: 3391561879
+    locked: 0

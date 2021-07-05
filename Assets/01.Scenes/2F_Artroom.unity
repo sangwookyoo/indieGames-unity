@@ -4508,8 +4508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f964836b3e888584d912a1ba53faf7aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1001
-  isNpc: 1
+  id: 13
+  isNpc: 0
 --- !u!1 &1590396343
 GameObject:
   m_ObjectHideFlags: 0
