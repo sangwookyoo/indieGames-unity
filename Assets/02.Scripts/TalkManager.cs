@@ -15,24 +15,37 @@ public class TalkManager : MonoBehaviour
         // Update is called once per frame
     void GenerateData()
     {
-        TextAsset sr = Resources.Load("TalkFileTxtTest") as TextAsset;
-        StringReader reader = new StringReader(sr.text);
 
-        bool endOfFile = false;
-        while (!endOfFile)
-        {
-            string data_String = reader.ReadLine();
-            if (data_String == null)
-            {
-                endOfFile = true;
-                break;
-            }
-            var data_values = data_String.Split(',');
+        talkData.Add(11, new string[] { "누군가의 일기장이다.", "읽어보자."});
+        talkData.Add(12, new string[] { "여기에 또다른 일기장이 있다." });
+        talkData.Add(13, new string[] { "또다른 일기장을 발견했다.", "읽어보자." });
+        talkData.Add(1001, new string[] { "안녕?", " 나는 애기동동이라고해" });
+        talkData.Add(1002, new string[] { " 드디어 날 바라봐주는구나.", "...", "마지막 일기장이야." });
 
-            
-            talkData.Add(int.Parse(data_values[0]), new string[] { data_values[1], data_values[2]});
-            
-        }
+        //TextAsset sr = Resources.Load("TalkFileTxtTest") as TextAsset;
+        //StringReader reader = new StringReader(sr.text);
+
+        //bool endOfFile = false;
+        //while (!endOfFile)
+        //{
+        //    string data_String = reader.ReadLine();
+        //    if (data_String == null)
+        //    {
+        //        endOfFile = true;
+        //        break;
+        //    }
+        //    var data_values = data_String.Split(',');
+
+        //    if(data_values[1] != null && data_values[2] == null && data_values[3] == null)
+        //        talkData.Add(int.Parse(data_values[0]), new string[] { data_values[1]});
+
+        //    else if(data_values[1] != null && data_values[2] != null && data_values[3] == null)
+        //        talkData.Add(int.Parse(data_values[0]), new string[] { data_values[1], data_values[2] });
+
+        //    else if(data_values[1] != null && data_values[2] != null && data_values[3] != null)
+        //        talkData.Add(int.Parse(data_values[0]), new string[] { data_values[1], data_values[2], data_values[3] });
+
+        //}
     }
 
     public string GetTalk(int id, int talkIndex)

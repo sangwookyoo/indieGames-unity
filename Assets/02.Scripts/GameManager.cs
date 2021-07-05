@@ -46,14 +46,14 @@ public class GameManager : MonoBehaviour
         scanObject = scanObj;
         ObjData objData = scanObject.GetComponent<ObjData>();
         Talk(objData.id, objData.isNpc);
-        
+        Debug.Log(objData.id);
         talkPanel.SetActive(isAction);
     }
 
     void Talk(int id, bool isNpc)
     {
         string talkData = talkManager.GetTalk(id, talkIndex);
-
+        
         if(talkData == null)
         {
             isAction = false;
