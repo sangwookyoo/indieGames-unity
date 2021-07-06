@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Diary
+  - Roof
   layers:
   - Default
   - TransparentFX
