@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 214938169}
   - component: {fileID: 214938168}
   m_Layer: 0
-  m_Name: 2Floor
+  m_Name: 1Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -718,7 +718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214938166}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.283, y: -5.868, z: 0}
+  m_LocalPosition: {x: -1.2, y: -5.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1457147126}
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a70923688a00b4ab5f5fe1e2e3dd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferMapName: 2Floor
+  transferMapName: 1Floor
   _preMapName: 
 --- !u!61 &214938169
 BoxCollider2D:
@@ -1605,7 +1605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01f6b194435c3b42b65e251385be07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: 2Floor
+  startPoint: 1Floor
 --- !u!61 &475009952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1640,7 +1640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475009950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.619, y: 2.276, z: 0}
+  m_LocalPosition: {x: -12.14, y: 2.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8040,7 +8040,7 @@ GameObject:
   - component: {fileID: 1409858322}
   - component: {fileID: 1409858321}
   m_Layer: 0
-  m_Name: 2Floor
+  m_Name: 1Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8054,7 +8054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409858319}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -9.27, y: -5.864, z: 0}
+  m_LocalPosition: {x: -9.26, y: -5.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1457147126}
@@ -8072,7 +8072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a70923688a00b4ab5f5fe1e2e3dd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferMapName: 2Floor
+  transferMapName: 1Floor
   _preMapName: 
 --- !u!61 &1409858322
 BoxCollider2D:
@@ -10649,7 +10649,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032645966}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 318e1800bf395444bb616ea75a82b0a9, type: 2}
   m_CullingMode: 0
