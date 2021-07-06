@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject scanObject;
     public GameObject talkPanel;
     public GameObject Player;
+    public GameObject DiaryContents;
     // Start is called before the first frame update
 
 
@@ -52,12 +53,15 @@ public class GameManager : MonoBehaviour
 
     void Talk(int id, bool isNpc)
     {
+        ObjData objData = scanObject.GetComponent<ObjData>();
         string talkData = talkManager.GetTalk(id, talkIndex);
         
         if(talkData == null)
         {
+            
             isAction = false;
             talkIndex = 0;
+            DiaryContents.SetActive(false);
             return;
         }
 
@@ -68,6 +72,12 @@ public class GameManager : MonoBehaviour
         else
         {
             talkText.text = talkData;
+            if (objData.id == 11)
+            {
+                DiaryContents.SetActive(true);
+            }
+            else
+                return;
         }
 
         isAction = true;
