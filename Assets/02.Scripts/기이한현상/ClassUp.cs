@@ -11,6 +11,7 @@ public class ClassUp : MonoBehaviour
 
     public GameObject Window;
     RaycastHit2D rayHit;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,7 @@ public class ClassUp : MonoBehaviour
            (rayHit = Physics2D.Raycast(transform.position, ForwardVec, 3f, LayerMask.GetMask("Player"))) || (rayHit = Physics2D.Raycast(transform.position, BackVec, 3f, LayerMask.GetMask("Player"))))
         {
             Window.SetActive(true);
+            audioSource.Play();
         }
     }
 }

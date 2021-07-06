@@ -24,7 +24,6 @@ public class TalkManager : MonoBehaviour
         talkData.Add(1001, new string[] { "안녕?", " 나는 애기동동이라고해" });
         talkData.Add(1002, new string[] { " 드디어 날 바라봐주는구나.", "...", "마지막 일기장이야." });
 
-
     }
 
     public string GetTalk(int id, int talkIndex)
