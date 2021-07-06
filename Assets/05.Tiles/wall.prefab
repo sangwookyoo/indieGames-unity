@@ -261,7 +261,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 29
-      m_TileSpriteIndex: 4294967295
+      m_TileSpriteIndex: 32
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -270,7 +270,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 30
-      m_TileSpriteIndex: 4294967295
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -408,18 +408,18 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d4cb1253b6e15744390b36863a63de3c, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: fc4bb19b5d4cbe64c8b37782a3c2c6bb, type: 2}
+    m_Data: {fileID: 11400000, guid: 59c4aff93a406d34cbbaf1654452e058, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 6dc536c8354f1114c878f2afde31e985, type: 2}
+    m_Data: {fileID: 11400000, guid: e6b57e6e019d2e8438498c5be8e5d91e, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 5ba0c2460ef9a1f4b8752c566cb38192, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 8b0b42683b2648641a2e098e91de3e57, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 489ef73dd8db38c43ae0bf60c64a3119, type: 2}
+    m_Data: {fileID: 11400000, guid: 2203bc12092bfd24f9870040ff5d2be6, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 6afe2a48e1ea99c43a7227d2d9c810ca, type: 3}
+    m_Data: {fileID: 21300000, guid: ce72a71ee184d794299867001b350f07, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 7182560071891717334, guid: 739be12dfde92dc47a05b18e8d2f23f2,
       type: 3}
@@ -512,6 +512,10 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 5661250727994440118, guid: 0dc868bcd2d974f4384aa75c1ef29e3e,
       type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: f3180a9e3ecd2f240b283372c2e9b0a7, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 2cc1c087813b2324f91a95ffa94d5380, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 34
     m_Data:
