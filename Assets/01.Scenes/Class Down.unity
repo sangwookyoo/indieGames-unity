@@ -192,7 +192,7 @@ SpriteRenderer:
   m_SortingLayerID: 89895271
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 65581d1d81803494dbf23354b11bad7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 404498c922edb3a4987ce20915a1baa3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2768,7 +2768,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737536364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.98000026, y: -1.68, z: 0}
+  m_LocalPosition: {x: -0.98000026, y: -0.9269999, z: 0}
   m_LocalScale: {x: 1.479, y: 1.479123, z: 1}
   m_Children: []
   m_Father: {fileID: 342655813}
@@ -5507,7 +5507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865543232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.31, y: -1.0399998, z: 0}
+  m_LocalPosition: {x: -1.31, y: -1.764, z: 0}
   m_LocalScale: {x: 1.9645953, y: 2.0304012, z: 1}
   m_Children: []
   m_Father: {fileID: 1788773452}
@@ -6602,7 +6602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106045918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.31, y: -1.0399998, z: 0}
+  m_LocalPosition: {x: -1.31, y: -1.757, z: 0}
   m_LocalScale: {x: 1.9645953, y: 2.0304012, z: 1}
   m_Children: []
   m_Father: {fileID: 342655813}
@@ -6926,7 +6926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230770023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.98000026, y: -1.68, z: 0}
+  m_LocalPosition: {x: -0.98000026, y: -0.942, z: 0}
   m_LocalScale: {x: 1.479, y: 1.479123, z: 1}
   m_Children: []
   m_Father: {fileID: 1788773452}
@@ -7277,7 +7277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328441798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3, y: -1.8, z: 0}
+  m_LocalPosition: {x: -1.3, y: -1.047, z: 0}
   m_LocalScale: {x: 1.9645953, y: 2.0304012, z: 1}
   m_Children: []
   m_Father: {fileID: 342655813}
@@ -7796,7 +7796,8 @@ SpriteRenderer:
   m_SortingLayerID: 89895271
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 138920e820ca6f841995e0e4357559f6, type: 3}
+  m_Sprite: {fileID: -4572274602858593414, guid: 7fc1c96b6fe5d9a4f9b0dce5c3e05554,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7838,7 +7839,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.5}
+    oldSize: {x: 0.57, y: 0.96}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7886,7 +7887,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418264512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.98000026, y: -0.95, z: 0}
+  m_LocalPosition: {x: -0.98000026, y: -1.667, z: 0}
   m_LocalScale: {x: 1.479, y: 1.479123, z: 1}
   m_Children: []
   m_Father: {fileID: 342655813}
@@ -8834,7 +8835,7 @@ SpriteRenderer:
   m_SortingLayerID: 89895271
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 65581d1d81803494dbf23354b11bad7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 404498c922edb3a4987ce20915a1baa3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9940,7 +9941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971232909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.98000026, y: -0.95, z: 0}
+  m_LocalPosition: {x: -0.98000026, y: -1.6740003, z: 0}
   m_LocalScale: {x: 1.479, y: 1.479123, z: 1}
   m_Children: []
   m_Father: {fileID: 1788773452}
@@ -10021,7 +10022,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992873138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3, y: -1.8, z: 0}
+  m_LocalPosition: {x: -1.3, y: -1.062, z: 0}
   m_LocalScale: {x: 1.9645953, y: 2.0304012, z: 1}
   m_Children: []
   m_Father: {fileID: 1788773452}
