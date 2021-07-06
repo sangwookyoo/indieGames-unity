@@ -18,12 +18,17 @@ public class PlayerAction : MonoBehaviour
     static public PlayerAction instance;
     public string currentMapname;
 
+    private Animator anim;
+
     /*private void Awake()
     {
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         rigid = GetComponent<Rigidbody2D>();
     }*/
-
+    void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
     void Start()
     {
         if (instance == null)
@@ -37,6 +42,8 @@ public class PlayerAction : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        //anim = GetComponent<Animator>();
 
     }
 
@@ -75,6 +82,21 @@ public class PlayerAction : MonoBehaviour
         //Scan Object
         if (Input.GetButtonDown("Jump") && scanObject != null)
             manager.Action(scanObject);
+
+        //Animation
+        if (anim.GetInteger("hAxisRaw") != h)
+        {
+            anim.SetBool("isChange", true);
+            anim.SetInteger("hAxisRaw", (int)h);
+        }
+        else if (anim.GetInteger("vAxisRaw") != v)
+        {
+            anim.SetBool("isChange", true);
+            anim.SetInteger("vAxisRaw", (int)v);
+        }
+        else
+            anim.SetBool("isChange", false);
+
     }
     private void FixedUpdate()
     {
