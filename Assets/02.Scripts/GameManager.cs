@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     public bool isLoadFile2;
     public bool isLoadFile3;
     public int talkIndex;
+
+    int DiaryCount = 0;
+    int objDataId;
+
     public GameObject MenuSet;
     public GameObject scanObject;
     public GameObject talkPanel;
@@ -46,17 +50,10 @@ public class GameManager : MonoBehaviour
         isAction = true;
         scanObject = scanObj;
         ObjData objData = scanObject.GetComponent<ObjData>();
-        int DiaryCount = 0;
         //Get Diary
-        if(objData.id == 11 || objData.id == 12 || objData.id == 13)
-        {
-            DiaryCount++;
-            PlayerPrefs.SetInt("DiaryCount", DiaryCount);
-        }
-        Debug.Log(PlayerPrefs.GetInt("DiaryCount"));
+       
 
         Talk(objData.id, objData.isNpc);
-        Debug.Log(objData.id);
         talkPanel.SetActive(isAction);
     }
 
@@ -71,6 +68,16 @@ public class GameManager : MonoBehaviour
             isAction = false;
             talkIndex = 0;
             DiaryContents.SetActive(false);
+            if (objData.id == 11 || objData.id == 12 || objData.id == 13)
+            {
+                
+                PlayerPrefs.SetInt("objDataId", objData.id);
+                DiaryCount++;
+                PlayerPrefs.SetInt("DiaryCount", DiaryCount);
+                
+            }
+
+            Debug.Log(PlayerPrefs.GetInt("DiaryCount"));
             return;
         }
 

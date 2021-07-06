@@ -25,7 +25,9 @@ public class LoadManager : MonoBehaviour
     }
     public void OnButtonClick()
     {
+        PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("isLoadFile", 0);
+
         SceneManager.LoadSceneAsync(sceneName);
         Debug.Log(sceneName + "로 이동합니다.");
     }
