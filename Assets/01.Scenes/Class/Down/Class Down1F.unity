@@ -1600,6 +1600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: 1Floor
+  startPoint2: MFloor
 --- !u!61 &475009952
 BoxCollider2D:
   m_ObjectHideFlags: 0
