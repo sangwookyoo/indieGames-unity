@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     public GameObject talkPanel;
     public GameObject Player;
     public GameObject DiaryContents;
-    public GameObject Walls;
 
     Vector3 LeftVec;
     RaycastHit2D rayHit;
@@ -41,7 +40,7 @@ public class GameManager : MonoBehaviour
    
     private void Update()
     {
-        if(Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel"))
         {
             if (MenuSet.activeSelf)
                 MenuSet.SetActive(false);
@@ -96,8 +95,7 @@ public class GameManager : MonoBehaviour
             {
                 DiaryContents.SetActive(true);
             }
-            else
-                return;
+            
         }
 
         isAction = true;
