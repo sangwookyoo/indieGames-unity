@@ -13,7 +13,12 @@ public class GameManager : MonoBehaviour
     public bool isLoadFile3;
     public int talkIndex;
 
-    int DiaryCount = 0;
+    public GameObject Wall;
+
+    public AudioSource audioSource;
+    public AudioClip EffectSound;
+
+    public int DiaryCount = 0;
     int objDataId;
 
     public GameObject MenuSet;
@@ -33,6 +38,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        audioSource = this.gameObject.GetComponent<AudioSource>();
         Debug.Log(PlayerPrefs.GetInt("isLoadFile"));
         GameLoad();
     }
@@ -77,7 +83,18 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt("objDataId", objData.id);
                 DiaryCount++;
                 PlayerPrefs.SetInt("DiaryCount", DiaryCount);
-                
+
+                if (DiaryCount == 2)
+                {
+                    audioSource.PlayOneShot(EffectSound);
+                    Destroy(Wall);
+                }
+
+                if (DiaryCount == 3)
+                {
+                    audioSource.PlayOneShot(EffectSound);
+                }
+
             }
 
             Debug.Log(PlayerPrefs.GetInt("DiaryCount"));

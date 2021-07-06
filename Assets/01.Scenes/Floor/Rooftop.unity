@@ -7704,7 +7704,12 @@ MonoBehaviour:
   scanObject: {fileID: 0}
   talkPanel: {fileID: 1317278191}
   Player: {fileID: 0}
+<<<<<<< HEAD
   DiaryContents: {fileID: 183223382}
+=======
+  DiaryContents: {fileID: 0}
+  Walls: {fileID: 0}
+>>>>>>> 0a5576bb29cebc399f365e063ad2dd1fa6f0ef6c
 --- !u!4 &1301463921
 Transform:
   m_ObjectHideFlags: 0
@@ -10364,7 +10369,7 @@ PrefabInstance:
     - target: {fileID: 4191428212433744799, guid: 5317b9edcc8b5f348bbfeb387594e738,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4925087877511772623, guid: 5317b9edcc8b5f348bbfeb387594e738,
         type: 3}

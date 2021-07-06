@@ -1,30 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TalkWindow : MonoBehaviour
 {
+    //button
+    public GameObject Panel_;
 
-    
-    public GameObject Talk_;
-    PlayerAction playeraction = GameObject.Find("Player").GetComponent<PlayerAction>();
-    int speed_;
+    public string sceneName;
 
-    private void Update()
+    public void StayPlayer()
     {
-        //gameObject.GetComponent<PlayerAction>().enabled = false;
-        //PlayerAction playeraction = GameObject.Find("Player").GetComponent<PlayerAction>();
-        playeraction.speed = 0;
-        if (Input.GetKeyDown("space"))
-        {
-            Talk_.SetActive(false);
-            if(Talk_.activeSelf == false)
-            {
-                playeraction.speed = 3;
-            }
-            
-        }
+        Panel_.SetActive(false);
+    }
 
+    public void OnButtonClick()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("isLoadFile", 0);
+
+        SceneManager.LoadSceneAsync(sceneName);
+        Debug.Log(sceneName + "로 이동합니다.");
     }
 
 }
