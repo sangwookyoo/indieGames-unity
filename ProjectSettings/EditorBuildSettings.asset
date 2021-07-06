@@ -12,40 +12,40 @@ EditorBuildSettings:
     path: Assets/01.Scenes/Floor/1Floor.unity
     guid: af617361d95511c4da95db180345a3aa
   - enabled: 1
-    path: Assets/01.Scenes/Class Down1F.unity
+    path: Assets/01.Scenes/Class/Down/Class Down1F.unity
     guid: 1f43d0ef0358beb4c874596d90ec633b
   - enabled: 1
-    path: Assets/01.Scenes/Class Up1F.unity
+    path: Assets/01.Scenes/Class/Up/Class Up1F.unity
     guid: 89fcb175ce7601d4c9ad328b7c3278a6
   - enabled: 1
-    path: Assets/01.Scenes/WC Down1F.unity
+    path: Assets/01.Scenes/Activity/WC Down1F.unity
     guid: ffc0b57d653383340b923b988ea55e02
   - enabled: 1
-    path: Assets/01.Scenes/WC Up1F.unity
+    path: Assets/01.Scenes/Activity/WC Up1F.unity
     guid: 27f01b686caab474e9cdb35d1f4066c4
   - enabled: 1
-    path: Assets/01.Scenes/1F_Libraray.unity
+    path: Assets/01.Scenes/Activity/1F_Libraray.unity
     guid: 6a173691e13c3ac4c9f3a4cdda1fbe93
   - enabled: 1
     path: Assets/01.Scenes/Floor/2Floor.unity
     guid: 9023fb18b8c017444821cf1305a327d7
   - enabled: 1
-    path: Assets/01.Scenes/2F_Artroom.unity
+    path: Assets/01.Scenes/Activity/2F_Artroom.unity
     guid: 1403297a35851ba40b6ad1779a34fd90
   - enabled: 1
-    path: Assets/01.Scenes/2F_Music.unity
+    path: Assets/01.Scenes/Activity/2F_Music.unity
     guid: a1eda22bf606beb4e842c3237eb47ed6
   - enabled: 1
-    path: Assets/01.Scenes/Class Down.unity
+    path: Assets/01.Scenes/Class/Down/Class Down.unity
     guid: 16065ac419d1ee541a92115958817afa
   - enabled: 1
-    path: Assets/01.Scenes/WC Down.unity
+    path: Assets/01.Scenes/Activity/WC Down.unity
     guid: 5c02dc7b5520371468a8ea5f70a04ba9
   - enabled: 1
-    path: Assets/01.Scenes/WC Up.unity
+    path: Assets/01.Scenes/Activity/WC Up.unity
     guid: 687e6424c007be94785aa694a0d16ecc
   - enabled: 1
-    path: Assets/01.Scenes/Class Up.unity
+    path: Assets/01.Scenes/Class/Up/Class Up.unity
     guid: a2c18d914c61750429879988616004a4
   - enabled: 1
     path: Assets/01.Scenes/Floor/Rooftop.unity
