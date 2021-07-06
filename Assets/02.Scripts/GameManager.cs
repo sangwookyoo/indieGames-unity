@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int talkIndex;
 
     int DiaryCount = 0;
+    int DiaryCount2 = 0;
     int objDataId;
 
     public GameObject MenuSet;
@@ -24,7 +25,10 @@ public class GameManager : MonoBehaviour
 
     Vector3 LeftVec;
     RaycastHit2D rayHit;
-    // Start is called before the first frame update
+
+    public AudioSource audioSource;
+    public GameObject Wall;
+    public AudioClip EffectSound;
 
 
     private void Awake()
@@ -71,13 +75,33 @@ public class GameManager : MonoBehaviour
             isAction = false;
             talkIndex = 0;
             DiaryContents.SetActive(false);
-            if (objData.id == 11 || objData.id == 12 || objData.id == 13)
+            if (objData.id == 11 || objData.id == 12)
             {
                 
                 PlayerPrefs.SetInt("objDataId", objData.id);
                 DiaryCount++;
                 PlayerPrefs.SetInt("DiaryCount", DiaryCount);
+
+                if (DiaryCount == 2)
+                {
+                    audioSource.PlayOneShot(EffectSound, 0.7f);
+                    Destroy(Wall);
+                }
                 
+            }
+
+            if (objData.id == 13)
+            {
+                PlayerPrefs.SetInt("objDataId", objData.id);
+                DiaryCount2++;
+                PlayerPrefs.SetInt("DiaryCount", DiaryCount2);
+
+                if (DiaryCount2 == 1)
+                {
+                    audioSource.PlayOneShot(EffectSound, 0.7f);
+                    PlayerPrefs.SetInt("num", DiaryCount2);
+                }
+
             }
 
             Debug.Log(PlayerPrefs.GetInt("DiaryCount"));
