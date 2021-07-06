@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
     public GameObject talkPanel;
     public GameObject Player;
     public GameObject DiaryContents;
+    public GameObject Walls;
+
+    Vector3 LeftVec;
+    RaycastHit2D rayHit;
     // Start is called before the first frame update
 
 
@@ -161,4 +165,6 @@ public class GameManager : MonoBehaviour
     }
   
     #endregion
+
+   
 }

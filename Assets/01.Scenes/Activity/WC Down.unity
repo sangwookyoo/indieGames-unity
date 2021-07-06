@@ -121,12 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &4521425 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-    type: 3}
-  m_PrefabInstance: {fileID: 4191428213814204131}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &101638207
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +132,7 @@ GameObject:
   - component: {fileID: 101638208}
   - component: {fileID: 101638210}
   - component: {fileID: 101638209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: short_wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +317,7 @@ GameObject:
   - component: {fileID: 193825698}
   - component: {fileID: 193825700}
   - component: {fileID: 193825699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toilet_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +459,7 @@ GameObject:
   - component: {fileID: 338863871}
   - component: {fileID: 338863873}
   - component: {fileID: 338863872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toilet_door (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +567,7 @@ GameObject:
   - component: {fileID: 588800013}
   - component: {fileID: 588800015}
   - component: {fileID: 588800014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: short_wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +675,7 @@ GameObject:
   - component: {fileID: 636311056}
   - component: {fileID: 636311058}
   - component: {fileID: 636311057}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: short_wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,18 +899,6 @@ Transform:
   m_Father: {fileID: 4521425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &700059891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700059887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9598fa8369c62c4fa714d5dca60080d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &800200226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,7 +2316,7 @@ GameObject:
   - component: {fileID: 821156907}
   - component: {fileID: 821156909}
   - component: {fileID: 821156908}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toilet (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2652,7 +2634,7 @@ GameObject:
   - component: {fileID: 839375629}
   - component: {fileID: 839375631}
   - component: {fileID: 839375630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toilet (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2894,7 +2876,7 @@ GameObject:
   - component: {fileID: 975381794}
   - component: {fileID: 975381796}
   - component: {fileID: 975381795}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: short_wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3002,7 +2984,7 @@ GameObject:
   - component: {fileID: 977051631}
   - component: {fileID: 977051633}
   - component: {fileID: 977051632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: washstand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3409,7 +3391,7 @@ GameObject:
   - component: {fileID: 1189990669}
   - component: {fileID: 1189990671}
   - component: {fileID: 1189990670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3653,7 +3635,7 @@ GameObject:
   - component: {fileID: 1301749844}
   - component: {fileID: 1301749846}
   - component: {fileID: 1301749845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toilet_door (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4014,7 +3996,7 @@ GameObject:
   - component: {fileID: 1482798685}
   - component: {fileID: 1482798687}
   - component: {fileID: 1482798686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: short_wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4122,7 +4104,7 @@ GameObject:
   - component: {fileID: 1539280146}
   - component: {fileID: 1539280148}
   - component: {fileID: 1539280147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: short_wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4230,7 +4212,7 @@ GameObject:
   - component: {fileID: 1726014515}
   - component: {fileID: 1726014517}
   - component: {fileID: 1726014516}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4338,7 +4320,7 @@ GameObject:
   - component: {fileID: 1735230037}
   - component: {fileID: 1735230039}
   - component: {fileID: 1735230038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4516,7 +4498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780675352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BathObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4775,7 +4757,7 @@ GameObject:
   - component: {fileID: 1924206341}
   - component: {fileID: 1924206343}
   - component: {fileID: 1924206342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: washstand (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7052,7 +7034,7 @@ GameObject:
   - component: {fileID: 2134675384}
   - component: {fileID: 2134675386}
   - component: {fileID: 2134675385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: toilet (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7215,92 +7197,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4191428213814204131
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1598796422494265861, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744738, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.2260218
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744739, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744797, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: manager
-      value: 
-      objectReference: {fileID: 1301463920}
-    - target: {fileID: 4191428212433744799, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4191428212433744799, guid: 5317b9edcc8b5f348bbfeb387594e738,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5317b9edcc8b5f348bbfeb387594e738, type: 3}
