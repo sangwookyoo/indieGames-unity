@@ -833,7 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11183d46e03c57d4682c72a73ff5817d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 1Floor
+  sceneName: StartStroy
   onContinue: {fileID: 1476145021}
   offContinue: {fileID: 127498869}
 --- !u!4 &280450067
