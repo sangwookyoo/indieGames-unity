@@ -46,6 +46,15 @@ public class GameManager : MonoBehaviour
         isAction = true;
         scanObject = scanObj;
         ObjData objData = scanObject.GetComponent<ObjData>();
+        int DiaryCount = 0;
+        //Get Diary
+        if(objData.id == 11 || objData.id == 12 || objData.id == 13)
+        {
+            DiaryCount++;
+            PlayerPrefs.SetInt("DiaryCount", DiaryCount);
+        }
+        Debug.Log(PlayerPrefs.GetInt("DiaryCount"));
+
         Talk(objData.id, objData.isNpc);
         Debug.Log(objData.id);
         talkPanel.SetActive(isAction);
@@ -72,7 +81,7 @@ public class GameManager : MonoBehaviour
         else
         {
             talkText.text = talkData;
-            if (objData.id == 11)
+            if (objData.id == 11 || objData.id == 12 || objData.id == 13)
             {
                 DiaryContents.SetActive(true);
             }
