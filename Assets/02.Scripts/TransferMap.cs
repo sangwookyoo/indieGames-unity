@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class TransferMap : MonoBehaviour
 {
     public string transferMapName;
+    public string _preMapName;
     private PlayerAction thePlayer;
 
     void Start()
@@ -19,6 +20,8 @@ public class TransferMap : MonoBehaviour
         {
             SceneManager.LoadScene(transferMapName);
             thePlayer.currentMapname = transferMapName;
+            _preMapName = SceneManager.GetActiveScene().name;
+            thePlayer.preMapname = _preMapName;
         }
     }
 }

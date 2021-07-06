@@ -582,6 +582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: 1Floor
+  _preMapName: 
 --- !u!61 &586635824
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5689,6 +5690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: SecondFloor
+  _preMapName: 
 --- !u!61 &1762659177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6137,7 +6139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01f6b194435c3b42b65e251385be07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: 1F_Libraray
+  startPoint: 1Floor
 --- !u!61 &2110916237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6172,7 +6174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110916235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.09, y: -3.6, z: 0}
+  m_LocalPosition: {x: -12.81, y: -1.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

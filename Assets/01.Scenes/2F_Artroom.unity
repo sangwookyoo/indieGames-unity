@@ -484,7 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497479931}
   m_Layer: 0
-  m_Name: SceneManger
+  m_Name: SceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5514,6 +5514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: 2Floor
+  _preMapName: 
 --- !u!61 &1621791930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5729,6 +5730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: SecondFloor
+  _preMapName: 
 --- !u!61 &1762659177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5907,7 +5909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01f6b194435c3b42b65e251385be07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: 2F_Artroom
+  startPoint: 2Floor
 --- !u!61 &1850826914
 BoxCollider2D:
   m_ObjectHideFlags: 0

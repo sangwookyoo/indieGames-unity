@@ -11,7 +11,7 @@ public class StartPoint : MonoBehaviour
     {
         thePlayer = FindObjectOfType<PlayerAction>();
 
-        if (startPoint == thePlayer.currentMapname)
+        if (startPoint == thePlayer.preMapname)
         {
             thePlayer.transform.position = this.transform.position;
         }

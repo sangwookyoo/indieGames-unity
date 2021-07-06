@@ -17,6 +17,7 @@ public class PlayerAction : MonoBehaviour
 
     static public PlayerAction instance;
     public string currentMapname;
+    public string preMapname;
 
     private Animator anim;
 
