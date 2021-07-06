@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 214938169}
   - component: {fileID: 214938168}
   m_Layer: 0
-  m_Name: 2Floor
+  m_Name: 1Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a70923688a00b4ab5f5fe1e2e3dd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferMapName: 2Floor
+  transferMapName: 1Floor
   _preMapName: 
 --- !u!61 &214938169
 BoxCollider2D:
@@ -1605,7 +1605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01f6b194435c3b42b65e251385be07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: 2Floor
+  startPoint: 1Floor
 --- !u!61 &475009952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8040,7 +8040,7 @@ GameObject:
   - component: {fileID: 1409858322}
   - component: {fileID: 1409858321}
   m_Layer: 0
-  m_Name: 2Floor
+  m_Name: 1Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8072,7 +8072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a70923688a00b4ab5f5fe1e2e3dd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferMapName: 2Floor
+  transferMapName: 1Floor
   _preMapName: 
 --- !u!61 &1409858322
 BoxCollider2D:
