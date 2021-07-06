@@ -1215,6 +1215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371739003}
   - component: {fileID: 371739004}
+  - component: {fileID: 371739005}
   m_Layer: 0
   m_Name: desk_chair
   m_TagString: Untagged
@@ -1251,7 +1252,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.25, y: -1.39}
+  m_Offset: {x: -1.25, y: -1.72}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1262,8 +1263,27 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.88}
+  m_Size: {x: 1.2, y: 1.13}
   m_EdgeRadius: 0
+--- !u!95 &371739005
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371739002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &408948948
 GameObject:
   m_ObjectHideFlags: 0
@@ -6875,6 +6895,7 @@ MonoBehaviour:
   scanObject: {fileID: 0}
   talkPanel: {fileID: 1317278191}
   Player: {fileID: 0}
+  DiaryContents: {fileID: 0}
 --- !u!4 &1301463921
 Transform:
   m_ObjectHideFlags: 0
