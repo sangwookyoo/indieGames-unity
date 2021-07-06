@@ -3923,7 +3923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WC Down
+  m_Text: WC 2F
 --- !u!222 &1385652825
 CanvasRenderer:
   m_ObjectHideFlags: 0
