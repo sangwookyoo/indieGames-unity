@@ -11,7 +11,7 @@ https://youtu.be/-3WvkIb6hec
 
 ## ⚙ Development Environment
  * OS : Windows 10
- * Tool : Unity 2D 2019.3.5
+ * Tool : Unity 3D 2019.3.5f1
 
 ## ✔ License
 This project is licensed under the MIT License - See the LICENSE.md file for details
